@@ -11,11 +11,13 @@ import numpy as np
 #                [3]
 #   
 #   b = np.array ([[1, 2, 3], [2, 3, 4], [5, 6, 7]])
+#        - Essa array é TRIDIMENSIONAL
 #        - Notar que aqui há listas dentro de uma lista;
 #        - Essa array é lida da seguinte maneira:
 #            b = [1 2 3]
 #                [2 3 4]
 #                [5 6 7] 
+#
 
 #Criando um array unidimensional
 a = np.array([[1,2,3]])
@@ -67,8 +69,19 @@ print()
 #Criando um novo array do 0
 #np.arange(valor inicial, valor final , passo)
 #Valor final = não é incluso ao final devido aos fundamentos do python
-#Passo = de quanto em quanto será feita a progressão
+#Passo = de quanto em quanto será feita a progressão. Pode ser float!
+
 c = np.arange(0, 100, 1)
 print()
 print('Printando um novo Array automatico C')
 print(c)
+
+#ATENÇÃO: Um Parâmetro np.arange(5) define a seguinte situação
+#  - O array vai começar no 0
+#  - O array vai finalizar no 4 (lembrar que o python ignora o último número por padrão em listas e tuplas)
+#  - O passo do array é 1
+
+#Criando um novo array do 0 com limspace
+#np.arange(valor inicial, valor final , passo)
+#Valor final = não é incluso ao final devido aos fundamentos do python
+#Passo = de quanto em quanto será feita a progressão. Pode ser float!
