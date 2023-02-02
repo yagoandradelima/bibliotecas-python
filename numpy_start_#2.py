@@ -1,6 +1,7 @@
 import numpy as np
 from skimage import io
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 
 #Criando uma Array simples com arange
 print('Criando um array unidimensional')
@@ -53,8 +54,9 @@ print()
 
 
 #Carregando uma imagem
-img = io.imread('imagens\code.png')
+img = mpimg.imread('C:/Users/yandrade/Documents/GitHub/bibliotecas-python/imagens/code.png')
 
-print(img)
+print(img.shape)
 
-plt.imshow(img)
+imgplot = plt.imshow(img)
+print(imgplot)
