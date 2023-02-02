@@ -1,4 +1,6 @@
 import numpy as np
+from skimage import io
+import matplotlib.pyplot as plt
 
 #Criando uma Array simples com arange
 print('Criando um array unidimensional')
@@ -48,3 +50,11 @@ print()
 #, 2]  - fatiando valores das colunas das linhas selecionadas
 print(b[0:2, 2])
 print()
+
+
+#Carregando uma imagem
+img = io.imread('imagens\code.png')
+
+print(img)
+
+plt.imshow(img)
