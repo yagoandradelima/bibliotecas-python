@@ -32,10 +32,19 @@ print(b)
 print()
 
 #Fatiando um array
+print('Printando da posição 2 até a 4')
 print(a[2:5])
+print()
+
+print('Printando sem definir o final ou o inicio')
+print(a[:5])
+print(a[1:])
+print()
+
+
 
 #Fatiando um array bidimensional
 #b[0:2 - fatiando as linhas
-#, 2]  - fatiando valores das colunas das linhs selecionadas
+#, 2]  - fatiando valores das colunas das linhas selecionadas
 print(b[0:2, 2])
 print()
