@@ -1,5 +1,5 @@
 import numpy as np
-from skimage import io
+import skimage as skm
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
@@ -54,9 +54,28 @@ print()
 
 
 #Carregando uma imagem
-img = mpimg.imread('C:/Users/yandrade/Documents/GitHub/bibliotecas-python/imagens/code.png')
+#lembrar que img é o nome da variável
+img = mpimg.imread('C:/Users/yandrade/Documents/GitHub/bibliotecas-python/imagens/d.jpg')
 
+#printando o shape da imagem
+print('Shape da imagem')
 print(img.shape)
+print()
 
-imgplot = plt.imshow(img)
-print(imgplot)
+print('Print da imagem unicamente')
+print(img)
+print()
+
+#Pra imagem aparecer precisa de um plt.show() no final
+print('tentando plotar a imagem')
+plt.imshow(img)
+plt.show()
+print()
+
+#Slice em uma imagem
+#As imagens são arrays de pixels. Apenas solicitei que uma nova variável armazenasse um corte da img anterior.
+nova_img = img[:, 0:201]
+plt.imshow(nova_img)
+plt.show()
+print()
+
