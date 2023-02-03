@@ -42,7 +42,22 @@ print(steps2.std())
 print()
 
 print('O valor da variação da Series')
-print(steps.var())
+print(steps2.var())
 print()
 
+print('Somatória dos valores da Series')
+print(steps2.sum())
+print()
+
+print('Descrição completa: contador, media, desvio padrão, minimo, quartio 25%, \n quartio 50%, quartio 75%, máximo')
+print(steps2.describe())
+print()
+
+print('Multiplicando os valores da Series')
+print(steps2*2)
+print()
+
+print('Aplicando função numpy na series')
+print(np.sqrt(steps2))
+print()
 
