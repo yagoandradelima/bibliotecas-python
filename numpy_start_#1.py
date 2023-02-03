@@ -134,7 +134,7 @@ print()
 
 #Criando uma matriz e montando sua diagonal principal
 #Não precisa passar parâmetro de shape, a quantidade de elementos define o numero de linhas e colunas
-#Forma sempre uma matriz quadrada
+#Forma sempre uma matriz quadrada com os outros elementos iguais a zero
 j = np.diag(np.array([1, 2, 3, 4, 5]))
 print(j)
 print()
