@@ -5,10 +5,10 @@ y = [1, 2, 7]
 
 plt.plot (x,y)
 
-plt.xlabel('Eixo x')
+plt.xlabel('Tempo')
 
-plt.ylabel('Eixo y')
+plt.ylabel('Crescimento em cm')
 
-plt.title('Teste')
+plt.title('Pesquisa de planta')
 
 plt.show()
