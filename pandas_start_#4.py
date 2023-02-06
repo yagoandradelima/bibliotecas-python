@@ -25,3 +25,12 @@ print()
 
 #salvando e convertendo um arquivo ao mesmo tempo:
 #df.to_csv('datasets/bd_zero.csv')
+
+#O HTML retorna uma lista de todas as tabelas dentro do HTML
+df3 = pd.read_html('https://g1.globo.com/bemestar/coronavirus/noticia/2020/05/26/casos-de-coronavirus-e-numero-de-mortes-no-brasil-em-26-de-maio.ghtml')
+#nesse primeiro print ele retorna cada tabela como 1 dataframe completo
+print(df3)
+print()
+#nesse segundo print eu vou pedir somente a posição [0]
+#e isso vai me retornar um dataframe completo
+print(df3[0])
