@@ -25,7 +25,8 @@ df['root_lenght'] = root_lenght
 print(df)
 print()
 
-#lembrar que a quantidade do range TEM que ser igual à quantidade
+#lembrar que a quantidade do range TEM que ser igual à quantidade da dimensão em que quero incluir a coluna
+#linha/coluna
 plant_sex = [ch(['M', 'F']) for i in range (150)]
 print(plant_sex)
 print()
