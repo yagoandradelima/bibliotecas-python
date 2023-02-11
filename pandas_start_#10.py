@@ -32,5 +32,14 @@ def changeFare(elemento):
     return '${:.2f}'.format(elemento)
 
 print(df['Fare'].apply(changeFare))
+print()
 #Para aplicar a transformação, o código é:
 #df['Fare'] = df['Fare'].apply(changeFare)
+
+#Ordenando
+#Não existe valor default para by= em sort_values(). É NECESSÁRIO ter um parâmetro definido!
+#by= definir coluna
+#inplace= retorna o resultado pra dentro do DataFrame
+#ascending= booleano que por default é true, mas em caso de False, ordena pela ordem decrescente 
+
+print(df.sort_values(by='Age'))
