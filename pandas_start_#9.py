@@ -47,7 +47,7 @@ df6 = pd.DataFrame(array,columns='D E F'.split(), index=[1, 2, 3])
 #Caso how='right', então os índices de df6 1 2 3 serão mostrados por completo e indices com labels diferentes
 #no df5 vão ser ignorados.
 print(df5.join(df6))
-
+print()
 #Para printar todos os índices
 print(df5.join(df6, how='outer'))
 
