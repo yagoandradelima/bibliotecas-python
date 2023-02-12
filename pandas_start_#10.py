@@ -43,3 +43,8 @@ print()
 #ascending= booleano que por default é true, mas em caso de False, ordena pela ordem decrescente 
 
 print(df.sort_values(by='Age'))
+print()
+#printando descendente
+#depois ler sobre o mergesort
+print(df.sort_values(by='Age', ascending=False, kind='mergesort'))
+
