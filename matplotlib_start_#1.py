@@ -13,3 +13,13 @@ plt.show()
 array2 = np.arange(1, 4)
 plt.plot(array2)
 plt.show()
+
+#
+x = np.arange(0, 10, 0.2)
+y = np.sin(x)
+plt.plot(x, y)
+plt.title('Seno')
+plt.xlabel('Eixo x')
+plt.ylabel('Eixo y')
+plt.grid(True)
+plt.show()
