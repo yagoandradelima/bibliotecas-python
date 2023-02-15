@@ -30,6 +30,7 @@ plt.plot(x, y2)
 plt.subplot(1, 3, 3) #Colocando o gráfico na posição 3 das 3 disponíveis
 plt.plot(x, y3)
 plt.figure(figsize=(12,6)) #Passar uma tupla (1,2) no figsize!
-plt.show()
+plt.tight_layout() #Melhora sutil no espaçamento
+plt.show() #Mostrando o gráfico
 
 
