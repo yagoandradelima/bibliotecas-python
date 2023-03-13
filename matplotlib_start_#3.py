@@ -29,6 +29,7 @@ axes[1].bar(df_bh['area'], df_bh['total (R$)'])
 axes[1].set_title
 axes[1].set_xlabel('Área (m²)')
 axes[1].set_ylabel('R$')
+plt.show()
 #E se eu quiser plotar na posição 3 de um subplot 2x2?
 #Simples! A próxima posição depois do axes[1] é axes[0][1]!
 #a função plt.subplots faz uma LISTA! então suas posições são acessadas como listas!!!
